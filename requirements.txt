@@ -1,0 +1,36 @@
+# Основные зависимости для проекта классификации токсичности
+
+# PyTorch и ML
+torch>=2.0.0
+transformers>=4.30.0
+tokenizers>=0.13.0
+scikit-learn>=1.3.0
+
+# FastAPI и веб-сервер
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+
+# Telegram Bot
+aiogram>=3.0.0
+
+# Google API
+google-generativeai>=0.3.0
+
+# Валидация данных
+pydantic==2.5.0
+
+# Конфигурация
+python-dotenv==1.0.0
+
+# HTTP клиент
+aiohttp==3.9.1
+
+# Дополнительные утилиты
+python-multipart==0.0.6
+numpy>=1.24.0
+pandas>=2.0.0
+
+# Дополнительные ML библиотеки
+matplotlib>=3.7.0
+seaborn>=0.12.0
+tqdm>=4.65.0

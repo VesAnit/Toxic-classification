@@ -1,0 +1,5 @@
+.ipynb_checkpoints
+.env
+/models
+/training/cc.en.300.bin
+/training/cc.en.300.bin.gz
