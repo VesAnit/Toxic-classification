@@ -83,6 +83,8 @@ python -m bot.bot
 | DistilBERT (advanced) | Accuracy: 96.36%, F1-score: 96.36% (EN+RU)      |
 | BiLSTM (MLebedeva)    | Accuracy: 96.11%, F1-score: 89.89% (RU)         |
 | BiLSTM (MLebedeva)    | Accuracy: 94.71%, F1-score: 72.25% (EN)         |
+| LogReg (classic ML)   | Accuracy: 97.32%, Macro F1: 89.10%   (EN)       |
+| LogReg (classic ML)   | Accuracy: 81.97%, Macro F1: 81.70%   (RU)       |
 | BiLSTM (base)         | Accuracy: 91.00% (EN+RU)                        |
 | BiGRU (base)          | Accuracy: 90.29% (EN+RU)                        |
 | CNN (base)            | Accuracy: 89.27%, F1-score: 75.42% (EN+RU)      |
