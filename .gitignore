@@ -1,5 +1,9 @@
 .ipynb_checkpoints
 .env
-/models
 /training/cc.en.300.bin
 /training/cc.en.300.bin.gz
+
+# Кэш Python
+__pycache__/
+*.pyc
+*.pyo
