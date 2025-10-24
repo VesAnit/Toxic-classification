@@ -63,7 +63,8 @@ GOOGLE_API_KEY=your_google_api_key
 
 ### Запуск:
 
-**Telegram-бот (из корня проекта):**
+1. **Скачайте модель DistilBERT** (см. [MODEL_SETUP.md](MODEL_SETUP.md))
+2. **Запустите Telegram-бот:**
 ```bash
 python -m bot.bot
 ```
