@@ -78,15 +78,15 @@ python -m bot.bot
 
 ## 📊 Сравнительная таблица моделей
 
-| Модель              | Метрики                                         |
-|---------------------|-------------------------------------------------|
-| DistilBERT          | Accuracy: 96.36%, F1-score: 96.36% (EN+RU)      |
-| BiLSTM (MLebedeva)  | Accuracy: 96.11%, F1-score: 89.89% (RU)         |
-| BiLSTM (MLebedeva)  | Accuracy: 94.71%, F1-score: 72.25% (EN)         |
-| BiLSTM              | Accuracy: 91.00% (EN+RU)                        |
-| BiGRU               | Accuracy: 90.29% (EN+RU)                        |
-| CNN                 | Accuracy: 89.27%, F1-score: 75.42% (EN+RU)      |
-| CNN (Base)          | Accuracy: 89.39% (EN+RU)                        |
+| Модель                | Метрики                                         |
+|-----------------------|-------------------------------------------------|
+| DistilBERT (advanced) | Accuracy: 96.36%, F1-score: 96.36% (EN+RU)      |
+| BiLSTM (MLebedeva)    | Accuracy: 96.11%, F1-score: 89.89% (RU)         |
+| BiLSTM (MLebedeva)    | Accuracy: 94.71%, F1-score: 72.25% (EN)         |
+| BiLSTM (base)         | Accuracy: 91.00% (EN+RU)                        |
+| BiGRU (base)          | Accuracy: 90.29% (EN+RU)                        |
+| CNN (base)            | Accuracy: 89.27%, F1-score: 75.42% (EN+RU)      |
+| CNN (base)            | Accuracy: 89.39% (EN+RU)                        |
 
 ### 🏆 Выбор модели
 **DistilBERT** показал наилучшие результаты и выбран для продакшена благодаря:
