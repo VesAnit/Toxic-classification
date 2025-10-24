@@ -83,12 +83,11 @@ python -m bot.bot
 | DistilBERT (advanced) | Accuracy: 96.36%, F1-score: 96.36% (EN+RU)      |
 | BiLSTM (MLebedeva)    | Accuracy: 96.11%, F1-score: 89.89% (RU)         |
 | BiLSTM (MLebedeva)    | Accuracy: 94.71%, F1-score: 72.25% (EN)         |
+| BiLSTM (base)         | Accuracy: 91.00% (EN), Accuracy: 91.00% (RU)    |
+| BiGRU (base)          | Accuracy: 90.29% (EN), Accuracy: 90.76% (RU)    |
+| CNN (base)            | Accuracy: 89.27% (EN), Accuracy: 89.17% (RU)    |
 | LogReg (classical ML) | Accuracy: 97.32%, Macro F1: 89.10%   (EN)       |
 | LogReg (classical ML) | Accuracy: 81.97%, Macro F1: 81.70%   (RU)       |
-| BiLSTM (base)         | Accuracy: 91.00% (EN+RU)                        |
-| BiGRU (base)          | Accuracy: 90.29% (EN+RU)                        |
-| CNN (base)            | Accuracy: 89.27%, F1-score: 75.42% (EN+RU)      |
-| CNN (base)            | Accuracy: 89.39% (EN+RU)                        |
 
 ### 🏆 Выбор модели
 **DistilBERT** показал наилучшие результаты и выбран для продакшена благодаря:
