@@ -3,7 +3,7 @@
 """
 from fastapi import FastAPI
 from agent.agent import classify_text
-from schemas import ClassificationRequest, ClassificationResponse
+from .schemas import ClassificationRequest, ClassificationResponse
 
 app = FastAPI(title="Toxic Classification API")
 

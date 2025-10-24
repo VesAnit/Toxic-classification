@@ -83,4 +83,3 @@ async def classify_text(text: str) -> ClassificationResponse:
     except Exception as e:
         logger.error(f"Classification error: {e}")
         return ClassificationResponse(class_id=0)  # fallback к нейтральному
-

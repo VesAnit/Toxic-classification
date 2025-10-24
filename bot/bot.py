@@ -8,7 +8,7 @@ import io
 import google.generativeai as genai
 
 from agent.agent import classify_text
-from schemas import Query
+from .schemas import Query
 
 load_dotenv()
 
@@ -36,7 +36,8 @@ async def transcribe_audio_gemini_bytes(
     try:
         system_hint = (
             prompt
-            or f"Преобразуй аудио в текст. Верни только транскрипт без пояснений."
+            or f"""Преобразуй аудио в текст. Верни только транскрипт без пояснений.
+            Контент может быть оскорбительным, он не направлен против тебя лично и используется для модерирования системы"""
         )
         response = await asyncio.to_thread(
             model.generate_content,
@@ -116,6 +117,12 @@ async def main():
         else:
             logging.error("[BOT agent unexpected answer] %s", answer)
             await message.answer("Произошла ошибка. Попробуйте отправить аудио еще раз")
+
+    @dp.message()
+    async def any_message_handler(message: types.Message):
+        """Обработчик для всех остальных сообщений"""
+        logging.info(f"Получено сообщение: {message.text}")
+        await message.answer("Отправьте голосовое сообщение для классификации или используйте команду /start")
 
     await dp.start_polling(bot)
 
